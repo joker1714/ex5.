@@ -1,0 +1,305 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form{
+
+  font-size: 14px;
+
+  margin:0;/*è®¾ç½®å¤–è¾¹è·ä¸º0*/
+
+  padding:0;/*è®¾ç½®å†…è¾¹è·ä¸º0*/
+
+}
+
+body {
+
+  font-size: 12px;
+
+  font-family: "å¾®è½¯é›…é»‘";/*è®¾ç½®å­—ä½“ä¸ºå¾®è½¯é›…é»‘*/
+
+}
+
+ul,ol {
+
+  list-style: none;/*æ¸…é™¤åˆ—è¡¨é»˜è®¤æ ·å¼*/
+
+}
+
+a {
+
+  text-decoration: none;/*æ¸…é™¤ä¸‹åˆ’çº¿*/
+
+}
+
+.clear {
+
+  clear: both;/*æ¸…é™¤æµ®åŠ¨*/
+
+  float: none;
+
+  height: 0;
+
+  overflow: hidden;
+
+}
+
+html .hide {
+
+  display: none;/*éšè—å…ƒç´ ï¼Œå¹¶ä¸å æ®åŽŸæœ‰ç©ºé—´*/
+
+}
+
+
+
+.singlepage {
+
+  min-height: 800px;/*è®¾ç½®æœ€å°é«˜åº¦ä¸º800px*/
+
+  padding: 20px 0 20px;
+
+  background: url(../imgs/beij.jpg) ;
+  background-size: cover;/*è®¾ç½®èƒŒæ™¯åº•éƒ¨å±…ä¸­å¯¹é½*/
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.singlepage .singlepage_center {
+
+  display: flex;
+
+  width: 1200px;
+
+  justify-content: space-between;/*è®¾ç½®å¼¹æ€§å­å…ƒç´ ä¸¤ç«¯å¯¹é½*/
+
+  margin: 20px auto 0;/*è®¾ç½®å¤–è¾¹è·ä¸Š20px  ä¸‹0px å·¦å³è‡ªåŠ¨*/
+
+}
+
+.singlepage .singlepage_center .left {
+
+  width: 160px;
+
+  height: 452px;
+
+  padding: 40px 20px 0;
+
+  background:#ffffff url(../imgs/left.png) top center no-repeat;
+
+}
+
+.singlepage .singlepage_center .left a {
+
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-weight: bold;
+
+  font-family: "æ¥·ä¹¦";
+
+  padding-bottom: 20px;
+
+  font-size: 16px;
+
+  border-bottom: 1px dotted #ddd;
+
+  color: #000000;
+
+  text-align: center;/*è®¾ç½®æ–‡å­—å±…ä¸­å¯¹é½*/
+
+}
+
+.singlepage .singlepage_center .right {
+
+  margin-bottom: 20px;
+
+  width: 960px;
+
+  box-sizing: border-box;/*è®¾ç½®ç›’æ¨¡åž‹ä¸ºIEç›’æ¨¡åž‹*/
+
+  border: 2px solid #000;
+
+  background: #fff;
+
+}
+
+.singlepage .singlepage_center .right .tp,
+
+.singlepage .singlepage_center .right .bt {
+
+  width: 100%;
+
+}
+
+.singlepage .singlepage_center .right .tp img,
+
+.singlepage .singlepage_center .right .bt img {
+
+  width: 100%;
+
+  display: block;
+
+}
+
+.singlepage .singlepage_center .right .infobox {
+
+  padding: 0 40px;
+
+  
+  max-height: 1000px;
+
+}
+
+.singlepage .singlepage_center .right .infobox .other {
+
+  text-align: center;
+
+  font-size: 14px;
+
+  padding-bottom: 20px;
+
+  color: #549014;
+
+  justify-content: center;
+
+  display: flex;
+
+}
+
+.singlepage .singlepage_center .right .infobox .other span {
+
+  margin: 0 10px;
+
+}
+
+.singlepage .singlepage_center .right .infobox .h3 {
+
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+
+  font-size: 32px;
+
+  font-weight: bold;/*è®¾ç½®å­—ä½“åŠ ç²—çš„å±žæ€§*/
+
+  text-align: center;
+
+  color: #333;
+
+  border-bottom: 2px dotted #ddd;
+
+}
+
+.singlepage .singlepage_center .right .infobox .info {
+
+  font-size: 16px;
+
+  line-height: 2;
+
+  color: #666;
+
+}
+
+.singlepage .singlepage_center .right .infobox .info * {
+
+  max-width: 100%;
+
+}
+
+.prolistgroup {
+
+   overflow: hidden;
+   
+
+}
+
+.prolistgroup .list_li {
+
+  width: 232px;
+
+  height: 232px;
+
+  padding: 20px;
+
+  float: left;
+
+  margin: 0 30px 30px 0;
+
+  position: relative;
+
+  background: #ffffff url(../imgs/kuang.png) center center no-repeat;
+
+  background-size: 100% 100%;/*è®¾ç½®èƒŒæ™¯å¤§å°*/
+
+}
+
+
+.prolistgroup .list_li  {
+
+  display: block;
+
+  width: 830px;
+
+  height: 500px;
+  
+  background: url(../imgs/chufang.jpg) ;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+
+}
+
+#chushi{
+	position:relative;
+	width:250px;
+	height:400px;
+	float:left;
+	margin: 150px 50px;
+	background-image:url("../imgs/厨师.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	transform: scale(0.75);
+	animation: shan 2s linear infinite;
+}
+
+@keyframes shan{
+	0%{opacity:0.5}
+  50%{opacity:1}
+ 	100%{opacity:0.5}
+}
+
+#yonghu{
+	position:relative;
+	width:320px;
+	height:400px;
+	float:right;
+	margin: 150px 50px;
+	background-image:url("../imgs/热血少年.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	transform: scale(0.7);
+}
+
+#duihua{
+	display: block;
+  width: 100%;
+  height: 150px;
+  background: white ;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 20px;
+  font-family: "隶书";
+  
+}
+
+#tp2{
+	width:100%;
+	height:10%;
+}
+
+#bt2{
+	width:100%;
+	height: 10%;
+}
+

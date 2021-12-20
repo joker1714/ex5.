@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>人间有味是清欢</title>
+		<meta name="keywords" content="">
+		<meta name="description" content=" ">
+		<link rel="stylesheet" type="text/css" href="css/include2.css" />
+		<script type="text/javascript">
+      
+			//图片id
+			var index = 1;
+      
+			window.onload = function(){
+				//给li添加鼠标点击事件
+				for(var i=1;i<=2;i++){
+				document.getElementById("li"+i).onclick = function(){
+					index = this.id.replace("li","");
+					setAnimate();
+				}
+				}
+			}
+			
+			//切换图片
+			function setAnimate(){
+				//设置view_box背景图片
+				document.getElementById("view_box").style.backgroundImage = "url('res/zongzi"+index+".png')";
+				
+				//设置li背景色
+				for(var i=1;i<=2;i++){
+				document.getElementById("li"+i).style.backgroundColor = "yellowgreen";
+				document.getElementById("li"+i).style.opacity = 0.5;
+				}
+				document.getElementById("li"+index).style.backgroundColor = "beige";
+				document.getElementById("li"+index).style.opacity = 1;
+			}
+		  </script>
+	</head>
+	<body>
+		<div class="singlepage">
+			<div class="singlepage_center">
+				<div class="left">
+					<a href="#" class="active">返回首页</a>
+					<a href="#">菜肴简介</a>
+					<a href="chushi.html">厨师采访</a>
+					<a href="prolist.html">入市买菜</a>
+					<a href="#">制作佳肴</a>
+				</div>
+				<div class="right">
+
+					<div class="tp">
+						<img src="imgs/tp.png" />
+					</div>
+
+					<div class="infobox">
+
+						<div class="h3">菜肴简介</div>
+
+						<div id="view_box">
+								<div class="btn_list">
+								  <ul>
+									<li id="li1">1</li>
+									<li id="li2">2</li>
+								   </ul>
+							 </div>
+						</div>
+						<div class="zongzi">
+					<p>嘉兴粽子是浙江省嘉兴市的一种传统食物，是中国的传统小吃之一，</p>
+					<p>汉唐以来，嘉兴发展成为中国历史上最主要的稻作区，被誉为“天下粮仓”。</p>
+					<p>嘉兴是我国最早的稻作起源地之一，</p>
+					<p>糯米和农副产品品种丰盛，为加工出好米创造了有利条件。</p>
+				    <p>糯而不糊，肥而不腻，香糯可口，咸甜适中</p>
+					<p>尤以鲜肉粽最为出名，被誉为“粽子之王”。</p>
+					<p>嘉兴大米有六七千年的历史，粽子选用天然粽叶，口味独特，</p>
+					<p>放上五谷和糯米后，多种自然芬芳合璧直指人心。</p>
+    		        </div>
+
+					</div>
+						
+					<div class="bt">
+						<img src="imgs/bt.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
